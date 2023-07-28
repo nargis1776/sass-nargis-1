@@ -1,0 +1,20 @@
+.feature-box {
+    padding: 0 2rem;
+    background-color: rgba($color-white, .80);
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-dark, .15);
+    transition: all .3s ease-in-out;
+    padding-bottom: 5rem;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-1.5rem) scale(1.05);
+    }
+
+    >i {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+        @include backgroundClip;
+        @include lg(to Right, $color-primary-light-op,$color-primary-dark-op)
+    }
+}
